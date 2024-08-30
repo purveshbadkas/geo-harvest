@@ -111,7 +111,7 @@
               </div>
               <br><br>
 
-              <a href="#featured-services" class="btn-get-started">Get Started</a>
+              <a href="#featured-services" class="btn-get-started" >Get Started</a>
             </div>
           </div>
         </div>
@@ -138,6 +138,145 @@
       </div>
 
     </section><!-- /Hero Section -->
+    <br>
+    <br>
+
+
+
+                            <!-- Market Price --> 
+    <h2 class="marketprice">MARKET PRICE</h2>
+    <section class="two-column-section">
+      <div class="left-column">
+    <div class="slideshow">
+        <img src="assets/img/about.jpg" alt="Slideshow Image 1" class="active">
+        <img src="assets/img/Add a little bit of body text.jpg" alt="Slideshow Image 2">
+        <img src="assets/img/services.jpg" alt="Slideshow Image 3">
+    </div>
+</div>
+      </div>
+      <div class="right-column">
+        <div class="table-heading">
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Commodity</th>
+                  <th>Arrival (qtls)</th>
+                  <th>Modal Price</th>
+                </tr>
+              </thead>
+              
+            </table>
+          </div>
+          
+        </div>
+        <div class="table-body">
+          <div class="table-row">
+            <div class="table-cell">Wheat</div>
+            <div class="table-cell">1500</div>
+            <div class="table-cell">₹2,500/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Rice</div>
+            <div class="table-cell">800</div>
+            <div class="table-cell">₹3,200/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+           <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Maize</div>
+            <div class="table-cell">1200</div>
+            <div class="table-cell">₹1,800/qtl</div>
+          </div>
+          
+          <!-- Add more rows as needed -->
+        </div>
+      </div>
+    </section>
+
+    <script >
+function startSlideshow() {
+    const images = document.querySelectorAll('.slideshow img');
+    let currentIndex = 0;
+
+    setInterval(() => {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+    }, 3600); // Change image every 5 seconds
+}
+
+document.addEventListener('DOMContentLoaded', startSlideshow);
+    </script>                                
+                             
 
     <!-- About Section -->
     <section id="about" class="about section">
