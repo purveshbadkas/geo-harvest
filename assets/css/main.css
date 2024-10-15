@@ -968,14 +968,20 @@ section,
 .hero .carousel-control-next:hover {
   opacity: 0.9;
 }
-                                /* Market Price */
+/* Market Price */
 
 .marketprice{
   text-align: center;
-  height: 100px;
-  width:400px;
+  height: 60px;
+  width: 400px;
+  margin: 10px auto; /* Centers the element horizontally */
+  position: relative;
+  padding: 10px;
   border: 2px solid black;
+  background-color: gold;
+  box-shadow: 3px 3px red ;
 }
+
 .two-column-section {
   margin-top: -2%;
   display: flex;
@@ -1076,6 +1082,13 @@ tbody {
   padding: 10px; /* Add padding */
   text-align: left; /* Align text to the left */
 }
+
+.elfsight-app-42c28183-dc4e-43df-91a8-0121eeb59e32 {
+  width: 500px; /* Set to your desired width */
+  height: 400px; /* Set to your desired height */
+  max-width: 100%; /* Ensures responsiveness */
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
