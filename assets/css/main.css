@@ -776,9 +776,8 @@ section,
   display: inline-block;
 }
 
-
 .hero .info .btn-get-started {
-  color: var(--contrast-color);
+  color: rgb(50, 46, 46);
   background: var(--accent-color);
   font-family: var(--heading-font);
   font-weight: 500;
@@ -803,7 +802,7 @@ section,
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #333;
+  background-color: #ffffff;
   left: 0;
   top: 0;
   border-radius: 10px;
@@ -813,9 +812,14 @@ section,
   content: "";
   background: linear-gradient(
     45deg,
-    #FF0000, #FF7300, #FFFB00, #48FF00,
-    #00FFD5, #002BFF, #FF00C8, #FF0000
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #48ff00,
+    #48ff00,
+    #48ff00
   );
+
   position: absolute;
   top: -2px;
   left: -2px;
@@ -831,9 +835,15 @@ section,
 }
 
 @keyframes glowing {
-  0% {background-position: 0 0;}
-  50% {background-position: 400% 0;}
-  100% {background-position: 0 0;}
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .hero .info .btn-get-started:hover::before {
@@ -849,7 +859,6 @@ section,
   font-weight: bold;
 }
 
-
 .input-group {
   display: flex; /* Align inputs horizontally */
   justify-content: center; /* Centers inputs within the group */
@@ -864,7 +873,6 @@ section,
 #crop:hover {
   background: var(--surface-color);
   color: var(--accent-color);
-  
 }
 
 .hero .info .btn-get-started:hover {
@@ -875,7 +883,7 @@ section,
 .hero .carousel {
   inset: 0;
   position: absolute;
-  overflow:visible;
+  overflow: visible;
 }
 
 .hero .carousel-item {
@@ -903,7 +911,7 @@ section,
   background-color: color-mix(
     in srgb,
     var(--background-color),
-    transparent 75%
+    transparent 40%
   );
   position: absolute;
   inset: 0;
@@ -959,6 +967,126 @@ section,
 .hero .carousel-control-prev:hover,
 .hero .carousel-control-next:hover {
   opacity: 0.9;
+}
+/* Market Price */
+
+.marketprice{
+  text-align: center;
+  height: 60px;
+  width: 400px;
+  margin: 10px auto; /* Centers the element horizontally */
+  position: relative;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: gold;
+  box-shadow: 3px 3px red ;
+}
+
+.two-column-section {
+  margin-top: -2%;
+  display: flex;
+  height: calc(100vh - 40px); /* Adjust 50px to match your navbar height */
+}
+
+.left-column {
+  width: 70%;
+  background-color: #f0f0f0;
+  /* padding: 1rem; */
+  border: black;
+}
+
+.right-column {
+  width: 35%;
+  background-color: #50d8af;
+  border: black;
+}
+
+.slideshow {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Ensure it takes the full height of the left column */
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+  object-position: center; /* Centers the image within the container */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow img.active {
+  opacity: 1;
+}
+
+body > * {
+  box-sizing: border-box;
+}
+
+.table-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scrolling if content exceeds height */
+}
+
+table {
+  width: 100%;
+  /* border-collapse: collapse;  */
+  font-size: 16px;
+}
+
+th,
+td {
+  padding: 10px; /* Add padding for better spacing */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #33ccad; /* Add bottom border for separation */
+}
+th {
+  background-color: #2dc899; /* Light background for headers */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+tbody {
+  animation: scroll 10s linear infinite;
+}
+
+.table-body {
+  overflow-y: hidden; /* Enable vertical scrolling */
+  max-height: calc(
+    100% - 50px
+  ); /* Adjust height to leave space for the heading */
+}
+
+.table-row {
+  display: flex; /* Use flexbox for rows */
+  border-bottom: 1px solid #ddd; /* Add bottom border for separation */
+  animation: scroll 1s linear infinite;
+}
+
+.table-cell {
+  flex: 1; /* Allow cells to grow equally */
+  padding: 10px; /* Add padding */
+  text-align: left; /* Align text to the left */
+}
+
+.elfsight-app-42c28183-dc4e-43df-91a8-0121eeb59e32 {
+  width: 500px; /* Set to your desired width */
+  height: 400px; /* Set to your desired height */
+  max-width: 100%; /* Ensures responsiveness */
 }
 
 /*--------------------------------------------------------------
